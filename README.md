@@ -49,6 +49,7 @@ Relevant times for extracting local features and describing images with created 
 - extract feature: 482.77 seconds;  
 - describe training set: 328.79 seconds;  
 - describe test set: 133.15 seconds.  
+
 Hardwares used for this project are:  
 - Architecture: x86_64  
 - CPU: Intel(R) Core(TM) i7-4558U CPU @2.80 GHz  
@@ -59,6 +60,7 @@ How to improve the project?
 Add:  
 - Inference module that allows you to know the answer to famous question 'Pizza Or Not Pizza?'  
 - Other classification techniques.  
+
 Anybody can collaborate and for any questions or hint [contact me](mailto:ausilianapoli@gmail.com)  
 
 Enjoy eating pizza :)
