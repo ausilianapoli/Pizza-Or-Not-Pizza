@@ -7,16 +7,17 @@ Structure
 The repository contains following modules:  
 - *Main*: it contains the instructions to run the project;  
 - *Dataset*: it creates datasets and image representation using bovw technique;  
-- *Classifier*: it contains code for various classification techniques chosen. 
+- *Classifier*: it contains code for various classification techniques chosen;  
+- *Inference*: it contains code for predict class on new image. 
 
 Dataset  
 --------
 I have used following dataset:  
->{bossard14,
->  title = {Food-101 -- Mining Discriminative Components with Random Forests},
->  author = {Bossard, Lukas and Guillaumin, Matthieu and Van Gool, Luc},
->  booktitle = {European Conference on Computer Vision},
->  year = {2014}
+>{bossard14,  
+>  title = {Food-101 -- Mining Discriminative Components with Random Forests},  
+>  author = {Bossard, Lukas and Guillaumin, Matthieu and Van Gool, Luc},  
+>  booktitle = {European Conference on Computer Vision},  
+>  year = {2014}  
 >}  
 
 [Web site](https://www.vision.ee.ethz.ch/datasets_extra/food-101/)  
@@ -28,6 +29,11 @@ It contains code for follows classification techniques:
 - KNN (k is not pre-fixed);  
 - Naive Bayes Classifier:  
 - Logistic Regression (it also plots the decision boundary in 3D space).  
+All training models are saved in .pkl files.  
+
+Inference
+-----------
+Its input is the bovw representation of an image and loading the classification models (previously trained) it predicts the class.  
 
 Main  
 ------
@@ -39,7 +45,8 @@ Steps done are:
 5. Normalize features through tf-idf and l2 norma;  
 6. Save .pkl file in order to speed up computation times for next steps;  
 7. It needs to use pre-computed features for next steps inn order to make faster the computation;  
-8. Create Classifier object and call its various methods.  
+8. Create Classifier object and call its various methods;  
+9. Inference on new image that is pre-processed by feature detector and descriptor.  
 
 Technical Data
 ----------------
@@ -58,10 +65,10 @@ Hardwares used for this project are:
 How to improve the project?
 ----------------------------
 Add:  
-- Inference module that allows you to know the answer to famous question 'Pizza Or Not Pizza?'  
-- Other classification techniques.  
-
-Anybody can collaborate and for any questions or hint [contact me](mailto:ausilianapoli@gmail.com)  
+- Inference module that allows you to know the answer to famous question 'Pizza Or Not Pizza?' **DONE**  
+- Other classification techniques;  
+- Other feature descriptors;  
+- Any your *idea*!  
 
 Enjoy eating pizza :)
 =====================
