@@ -5,9 +5,12 @@
 
 from Dataset import Dataset
 from Classifier import Classifier
+from Inference import Inference
 import numpy as np
 from sklearn.preprocessing import Normalizer
 from sklearn.cluster import MiniBatchKMeans as KMeans
+from skimage import io as sio
+from matplotlib import pyplot as plt
 import pickle
 import warnings
 warnings.filterwarnings("ignore")
@@ -94,3 +97,17 @@ while k <= 5:
 classifier.naiveBayes(X_training_tfidf_l2, Y_training, X_test_tfidf_l2, Y_test)
 classifier.logisticRegression(X_training_tfidf_l2, Y_training, X_test_tfidf_l2, Y_test)
 
+#Step 9: inference on new image
+img = "./sample_6.jpg"
+img = sio.imread(img)
+plt.figure()
+plt.imshow(img)
+plt.show()
+bovw_representation = dataset.extractAndDescribe(img, kmeans)
+inference = Inference(bovw_representation.reshape(1, -1))
+k = 1
+while k <= 5:
+    inference.knnInference(k)
+    k+=2
+inference.NaiveBayesInference()
+inference.LogisticRegressionInference()
