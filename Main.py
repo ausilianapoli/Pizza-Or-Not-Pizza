@@ -98,7 +98,7 @@ classifier.naiveBayes(X_training_tfidf_l2, Y_training, X_test_tfidf_l2, Y_test)
 classifier.logisticRegression(X_training_tfidf_l2, Y_training, X_test_tfidf_l2, Y_test)
 
 #Step 9: inference on new image
-img = "./sample_6.jpg"
+img = "./sample_0.jpg"
 img = sio.imread(img)
 plt.figure()
 plt.imshow(img)

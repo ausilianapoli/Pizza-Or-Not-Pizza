@@ -33,7 +33,10 @@ class Inference:
     def LogisticRegressionInference(self):
         filename = "LogisticRegression_training.pkl"
         model = pickle.load(open(filename, "rb"))
-        tag = model.predict(self.img)
+        filename = "LogisticRegression_PCA.pkl"
+        pca = pickle.load(open(filename, "rb"))
+        img_pca = pca.transform(self.img)
+        tag = model.predict(img_pca)
         name = self.indexToNameClass(tag)
         print("Logistic Regression predicts class {} --> {}".format(tag, name))
         

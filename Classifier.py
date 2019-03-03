@@ -74,3 +74,5 @@ class Classifier:
               .format(accuracy, elapsed_time))
         filename = "LogisticRegression_training.pkl"
         pickle.dump(lr, open(filename, "wb"))
+        filename = "LogisticRegression_PCA.pkl"
+        pickle.dump(pca, open(filename, "wb"))
