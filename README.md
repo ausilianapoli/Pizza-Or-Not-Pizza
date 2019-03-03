@@ -65,8 +65,8 @@ Hardwares used for this project are:
 
 Usage
 ------
-It is need to run 'Main.py'.  
-If you want to use .pkl files to speed up computation, comments lines from 21 to 74 of 'Main.py'.  
+It is need to run `Main.py`.  
+If you want to use .pkl files to speed up computation, comments lines from 21 to 74 of `Main.py`.  
 
 How to improve the project?
 ----------------------------
