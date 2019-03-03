@@ -29,6 +29,7 @@ It contains code for follows classification techniques:
 - KNN (k is not pre-fixed);  
 - Naive Bayes Classifier:  
 - Logistic Regression (it also plots the decision boundary in 3D space).  
+
 All training models are saved in .pkl files.  
 
 Inference
@@ -61,6 +62,11 @@ Hardwares used for this project are:
 - Architecture: x86_64  
 - CPU: Intel(R) Core(TM) i7-4558U CPU @2.80 GHz  
 - RAM size: 8 GB  
+
+Usage
+------
+It is need to run 'Main.py'.  
+If you want to use .pkl files to speed up computation, comments lines from 21 to 74 of 'Main.py'.  
 
 How to improve the project?
 ----------------------------
