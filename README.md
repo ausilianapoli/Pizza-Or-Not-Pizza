@@ -78,5 +78,9 @@ Add:
 - Other feature descriptors;  
 - Any your *idea*!  
 
+Acknowledgements
+-----------------
+Thanks to [@Tobaloidee](https://github.com/Tobaloidee) for the logo project.
+
 Enjoy eating pizza :)
 =====================
