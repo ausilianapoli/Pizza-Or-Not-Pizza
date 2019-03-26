@@ -1,3 +1,5 @@
+<p align="center"><img src="/logo/pizzaornotpizza-logotype-horizontal.png"></p>
+
 Pizza Or Not Pizza?  
 ===================
 I have coded simple classifier for image showing pizza or other. My little project compares different classifiers on **accuracy** and **elapsed time**.  
