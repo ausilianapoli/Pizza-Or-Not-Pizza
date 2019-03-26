@@ -32,7 +32,7 @@ It contains code for follows classification techniques:
 - Naive Bayes Classifier:  
 - Logistic Regression (it also plots the decision boundary in 3D space).  
 
-All training models are saved in .pkl files.  
+All training models are saved in .pkl files inside a folder called pkl (it needs to create this folder before running the project).  
 
 Inference
 -----------
