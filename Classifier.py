@@ -24,7 +24,7 @@ class Classifier:
         accuracy = nnk.score(X_test, y_test)
         print("{0}-nn Classifier:\n\taccuracy score:{1:0.2f}\n\telapsed time:{2:0.2f} sec"\
               .format(k, accuracy, elapsed_time))
-        filename = "{}nn_training.pkl".format(k)
+        filename = "./pkl/{}nn_training.pkl".format(k)
         pickle.dump(nnk, open(filename, "wb"))
         
     def naiveBayes (self, X_train, y_train, X_test, y_test):
@@ -36,7 +36,7 @@ class Classifier:
         accuracy = nb.score(X_test, y_test)
         print("Naive Bayes Classifier:\n\taccuracy score:{0:0.2f}\n\telapsed time:{1:0.2f} sec"\
               .format(accuracy, elapsed_time))
-        filename = "NaiveBayes_training.pkl"
+        filename = "./pkl/NaiveBayes_training.pkl"
         pickle.dump(nb, open(filename, "wb"))
         
     def logisticRegression (self, X_train, y_train, X_test, y_test):
@@ -72,7 +72,7 @@ class Classifier:
         accuracy = lr.score(X_test_pca, y_test)
         print("Logistic Regression Classifier:\n\taccuracy score:{0:0.2f}\n\telapsed time:{1:0.2f} sec (it doesn't include plot time)"\
               .format(accuracy, elapsed_time))
-        filename = "LogisticRegression_training.pkl"
+        filename = "./pkl/LogisticRegression_training.pkl"
         pickle.dump(lr, open(filename, "wb"))
-        filename = "LogisticRegression_PCA.pkl"
+        filename = "./pkl/LogisticRegression_PCA.pkl"
         pickle.dump(pca, open(filename, "wb"))

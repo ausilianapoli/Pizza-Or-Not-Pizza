@@ -59,7 +59,7 @@ X_training_tfidf_l2 = norm.transform(X_training_tfidf)
 X_test_tfidf_l2 = norm.transform(X_test_tfidf)
  
 #Step 6: save .pkl file in order to speed up computation times for next steps
-with open("PizzaORNOTPizza_bovw.pkl", "wb") as out:
+with open("./pkl/PizzaORNOTPizza_bovw.pkl", "wb") as out:
     pickle.dump({
             "X_training": X_training,
             "X_training_tfidf_l2": X_training_tfidf_l2,
@@ -74,7 +74,7 @@ with open("PizzaORNOTPizza_bovw.pkl", "wb") as out:
             }, out)
      
 #Step 7: in order to speed up, it needs to use pre-computed features for next steps
-with open("PizzaORNOTPizza_bovw.pkl", "rb") as inp:
+with open("./pkl/PizzaORNOTPizza_bovw.pkl", "rb") as inp:
     data = pickle.load(inp)
   
 X_training = data["X_training"]
