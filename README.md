@@ -80,7 +80,7 @@ Add:
 
 Acknowledgements
 -----------------
-Thanks to [@Tobaloidee](https://github.com/Tobaloidee) for the logo project.
+Thanks to [@Tobaloidee](https://github.com/Tobaloidee) for the project logo.
 
 Enjoy eating pizza :)
 =====================
